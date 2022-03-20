@@ -1,25 +1,55 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+//import separate components
+import Logo from "./Logo";
+import BestPokeman from "./BestPokeman";
+import CaughtPokemon from "./CaughtPokemon";
 
-function App() {
+// const Logo = () => {
+//    const appName = "Jude's Pokedex";
+//   return (
+//     <div>
+//     <header>
+//       <h1> {appName}</h1>
+//       <img 
+//       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" 
+//       alt="Pokemon"
+//       />
+//       ;
+//     </header>
+//     </div>
+//   );
+// };
+
+// // an array of abilities in ordered list format
+// const BestPokeman = () => {
+//   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+//   return (
+//     <div>
+//     <p>My favorite Pokemon is Squirtle- although I have never heard of him </p>
+//     <ul>
+//       {abilities.map((element) => {
+//         return <li>{element}</li>;
+//       })}
+//     </ul>
+//     </div>
+//   );
+// };
+
+// //latest date 
+// const CaughtPokemon = () => {
+//  const date = new Date().toLocaleDateString();
+//  return <p> Caught 0 Pokemon on {date}</p>;
+// };
+
+// constructing the app with individual components
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <div>
+    <Logo />
+    <BestPokeman />
+    <appName/>
+    <CaughtPokemon/>
+  </div>);
+};
 
 export default App;
