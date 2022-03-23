@@ -10,8 +10,8 @@ import CaughtPokemon from "./CaughtPokemon";
 //     <div>
 //     <header>
 //       <h1> {appName}</h1>
-//       <img 
-//       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" 
+//       <img
+//       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
 //       alt="Pokemon"
 //       />
 //       ;
@@ -35,7 +35,7 @@ import CaughtPokemon from "./CaughtPokemon";
 //   );
 // };
 
-// //latest date 
+// //latest date
 // const CaughtPokemon = () => {
 //  const date = new Date().toLocaleDateString();
 //  return <p> Caught 0 Pokemon on {date}</p>;
@@ -44,12 +44,13 @@ import CaughtPokemon from "./CaughtPokemon";
 // constructing the app with individual components
 const App = () => {
   return (
-  <div>
-    <Logo />
-    <BestPokeman />
-    <appName/>
-    <CaughtPokemon/>
-  </div>);
+    <div>
+      <Logo />
+      <BestPokeman />
+      {/* <appName /> */}
+      <CaughtPokemon />
+    </div>
+  );
 };
 
 export default App;
