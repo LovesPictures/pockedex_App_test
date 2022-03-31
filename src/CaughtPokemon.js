@@ -1,35 +1,28 @@
 import React, { useState } from "react";
 
-const CaughtPokemon = () => {
+const CaughtPokemon = (props) => {
   const [caught, setCaught] = useState([]);
 
   function catchPokemon() {
-    setCaught((c1) => {
-      return c1 + 1;
-    });
+    setCaught(caught.concat(["PO", "E", "Mo", "N", "!"]));
   }
-  const date = new Date().toLocaleDateString();
+
+  console.log(props);
   return (
     <>
       <p>
-        caught {caught.length} Pokemon on {date}{" "}
-        <button onClick={catchPokemon}>caught Pokemon</button>
+        Caught {caught.length} Pokemon on {props.date}
       </p>
-
+      <button onClick={catchPokemon}>Click me</button>
       <ul>
-        {" "}
-        {caught.map((item, index) => {
-          return (
-            <li>
-              key= {index} > {item}
-            </li>
-          );
+        {caught.map((el, index) => {
+          return <li key={index}>{el}</li>;
         })}
       </ul>
     </>
   );
 };
-
 export default CaughtPokemon;
+
 //callback function is call ted with the value
 // the function and the array
