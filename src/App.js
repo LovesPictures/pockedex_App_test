@@ -13,7 +13,6 @@ const App = () => {
     <div>
       <Logo handleLog={logWhenClicked} />
       <BestPokeman />
-      {/* <appName /> */}
       <CaughtPokemon />
     </div>
   );

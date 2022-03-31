@@ -4,7 +4,7 @@ const Logo = (props) => {
   // function logWhenClicked() {
   //   console.log("Hello Kate");
   // }
-  const appName = "Jude's Pokedex";
+  // const appName = "Jude's Pokedex";
   return (
     <div>
       <header>
