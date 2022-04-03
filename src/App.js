@@ -3,6 +3,8 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokeman from "./BestPokeman";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 const App = () => {
   function logWhenClicked() {
@@ -14,6 +16,8 @@ const App = () => {
       <Logo handleLog={logWhenClicked} />
       <BestPokeman />
       <CaughtPokemon />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 };

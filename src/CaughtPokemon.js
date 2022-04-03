@@ -13,7 +13,7 @@ const CaughtPokemon = (props) => {
       <p>
         Caught {caught.length} Pokemon on {props.date}
       </p>
-      <button onClick={catchPokemon}>Click me</button>
+      <button onClick={catchPokemon}>Catch Pokemon</button>
       <ul>
         {caught.map((el, index) => {
           return <li key={index}>{el}</li>;
